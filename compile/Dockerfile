@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Compile the game engine on linux using t
 LABEL "com.github.actions.icon"="aperture"
 LABEL "com.github.actions.color"="purple"
 
-RUN dnf -y install irrlicht
+RUN dnf -y install irrlicht-devel
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
